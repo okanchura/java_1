@@ -20,7 +20,7 @@ public class Test3 {
 		int d = a;
 		int count = 0; 
 		
-		while (d > b) {
+		while (d > (b-1)) {
 			d = d-b; count++;
 			
 			}
