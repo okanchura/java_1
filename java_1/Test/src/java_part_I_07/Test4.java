@@ -12,7 +12,7 @@ public class Test4 {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите целое число N (> 0)");
 		int n = in.nextInt();
-		boolean A;
+		/*boolean A;
 		int j = 3;
 		//boolean C = (n <= 1) && (y1 < 9) && (x2 < 9) && (y2 < 9);		
 		
@@ -28,5 +28,12 @@ public class Test4 {
 		/*for (int i = 1; i <= N; i++) {
 			sum = sum + b*i; b = b*a;
 			} */
+
+		          boolean b =true;
+		          for (int i=2; i<=n/2; i++;) {
+		        	  if (n%i==0) {
+		        		  b=false; break;
+		        	  }
+		          }
 		System.out.println("Число является простым? -" + A);
 	}}

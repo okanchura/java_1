@@ -34,5 +34,5 @@ public class Test5 {
 		/*for (;qb>0;qb--) {
 			count++;}
 		} else {*/
-		System.out.println("Количество квадратов " + count);
+		System.out.println("Количество квадратов " + count); in.close();
 	}}}}
