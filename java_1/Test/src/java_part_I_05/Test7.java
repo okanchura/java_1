@@ -13,35 +13,50 @@ import java.util.Scanner;
 public class Test7 {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("java_part_I_05 «адание 7:");
 
 		Scanner in = new Scanner(System.in);
 		System.out.println("¬ведите целое число");
 		int n = in.nextInt();
-		String A = " A "; 
-		String B = " B "; 
-		int a = n%2; 
-		
-		if (a > 0 && n > 100 && n > 99) {A = "нечетное "; B = "трехзначное";} 
-			else {
-			if (a > 0 && n < 100 && n > 9) {A = "нечетное "; B = "двузначное";} 	
-				else {
-				if (a > 0 && n < 10 && n > 0) {A = "нечетное "; B = "однозначное";} 			
-		else {
-			if (a < 0 && n > 99) {A = "четное "; B = "трехзначное";} 
-			else {
-			if (a < 0 && n < 100 && n > 9) {A = "четное "; B = "двузначное";} 	
-				else {
-				if (a < 0 && n < 10 && n > 0) {A = "четное "; B = "однозначное";} 
+		String A = " A ";
+		String B = " B ";
+		int a = n % 2;
 
-// не отрабатывает проверка n на количество знаков
-/*		if (n > 99) {B = "трехзначное";} 
-			else {
-		if (n > 9) {B = "двузначное";} 
-			else {
-		if (n > 0) {B = "однозначное";}	
-*/		
-		//System.out.println(B + " число");}
+		if (a > 0) {
+			if (n > 100 && n > 99) {
+				A = "нечетное ";
+				B = "трехзначное";
+			}
+
+			if (n < 100 && n > 9) {
+				A = "нечетное ";
+				B = "двузначное";
+			}
+
+			if (n < 10 && n > 0) {
+				A = "нечетное ";
+				B = "однозначное";
+			}
+			;
+
+		} else {
+			if (n < 0 && n > 99) {
+				A = "четное ";
+				B = "трехзначное";
+			}
+
+			if (n < 100 && n > 9) {
+				A = "четное ";
+				B = "двузначное";
+			}
+
+			if (n < 10 && n > 0) {
+				A = "четное ";
+				B = "однозначное";
+			}
+		}
+
 		System.out.println("Ёто " + A + " " + B + " число");
-}}}}}}}
+	}
+}

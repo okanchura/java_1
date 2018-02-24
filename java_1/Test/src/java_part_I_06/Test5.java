@@ -11,28 +11,24 @@ import java.util.Scanner;
 public class Test5 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите размер процентной ставки Р (0 < P < 25)");
-		int P = in.nextInt();
-		float p1 = 1+P/100;
+		float P = in.nextInt();
+		float p1 = 1 + P / 100;
 		float d = 1000;
 		float f = 1100;
-		int K = 0; 
-		
-	/*	while (d < 1100) {
-			d = d*p1; K++;
-			
-			} */
-		
+		int K = 0;
+
+
 		do {
-		 d = d*p1; K++;}
-		while (d < f);
-		
-		System.out.println("Количество месяцев K " + K);		
+			d = d * p1;
+			K++;
+		} while (d < f);
+
+		System.out.println("Количество месяцев " + K);
 		System.out.println("Размер вклада на последний месяц " + d);
 
-
 	}
-		
+
 }

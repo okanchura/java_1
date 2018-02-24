@@ -18,13 +18,21 @@ public class Test5 {
 		int b = in.nextInt();
 		System.out.println("Введите число C");
 		int c = in.nextInt();
-
+		int qa =0; int qb =0; 
 		int count = 0;
 		
-
-		while (a > c) {a = a-c; count++;}
-			int d = count;
-				if (b > c) {b = b-c; d++;}
-				if (a < c || b < c) {d = 0;}; 
-		System.out.println("Количество квадратов " + d);
-	}}
+		//if (a>c && b >c) {
+		for (; a>=c; qa++) {
+			a = a-c; count++;
+		//	};
+			
+		if (b>=c) {
+		for (;b>=c; qb++) {
+			b = b-c; count++;
+			}
+		
+		/*for (;qb>0;qb--) {
+			count++;}
+		} else {*/
+		System.out.println("Количество квадратов " + count);
+	}}}}
