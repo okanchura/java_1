@@ -41,7 +41,7 @@ public class Test7 {
 			;
 
 		} else {
-			if (n < 0 && n > 99) {
+			if (n > 99) {
 				A = "четное ";
 				B = "трехзначное";
 			}

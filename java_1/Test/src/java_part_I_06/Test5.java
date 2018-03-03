@@ -27,7 +27,7 @@ public class Test5 {
 		} while (d < f);
 
 		System.out.println("Количество месяцев " + K);
-		System.out.println("Размер вклада на последний месяц " + d);
+		System.out.println("Размер вклада на последний месяц " + d); in.close();
 
 	}
 

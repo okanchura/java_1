@@ -18,21 +18,24 @@ public class Test5 {
 		int b = in.nextInt();
 		System.out.println("Введите число C");
 		int c = in.nextInt();
-		int qa =0; int qb =0; 
+		int i = 0;
 		int count = 0;
-		
-		//if (a>c && b >c) {
-		for (; a>=c; qa++) {
-			a = a-c; count++;
-		//	};
-			
-		if (b>=c) {
-		for (;b>=c; qb++) {
-			b = b-c; count++;
+
+		if (a >= c) {
+			for (; a >= c; i++) {
+				a = a - c;
+				count++;
+
+				if (b >= c) {
+				for (int j = 0; j <= i + 1; j++) {
+					b = b - c;
+				count++;}}
+				
+					else {if (a < c || b < c) {
+				count = 0;
 			}
-		
-		/*for (;qb>0;qb--) {
-			count++;}
-		} else {*/
-		System.out.println("Количество квадратов " + count); in.close();
-	}}}}
+			
+		} 
+	}} System.out.println("Количество квадратов " + count);
+	in.close();
+		}}

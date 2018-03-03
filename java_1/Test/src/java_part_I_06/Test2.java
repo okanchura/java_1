@@ -23,7 +23,7 @@ public class Test2 {
 		b--; count++;}
 		while (a+1 < b);
 	
-		System.out.println("Всего чисел " + count);
+		System.out.println("Всего чисел " + count); in.close();
 	}
 		
 }
